@@ -2,7 +2,6 @@ function eggemplo_woocommerce_product_tax_class( $tax_class, $product ) {
 	// you can get this value from Groups->Groups table
 	$group_id = 2;
 	
-	// get user first group
 	$user_id = get_current_user_id();
 	
 	$exists = Groups_User_Group::read( $user_id, $group_id );
